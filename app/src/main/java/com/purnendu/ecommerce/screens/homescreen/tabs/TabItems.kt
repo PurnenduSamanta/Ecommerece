@@ -1,8 +1,7 @@
-package com.purnendu.ecommerce.components
+package com.purnendu.ecommerce.screens.homescreen.tabs
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavController
-import com.purnendu.ecommerce.screens.ElectronicsScreen
 
 typealias ComposableFun = @Composable () -> Unit
 

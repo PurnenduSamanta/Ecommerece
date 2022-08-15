@@ -1,4 +1,4 @@
-package com.purnendu.ecommerce.components
+package com.purnendu.ecommerce.components.home
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.border

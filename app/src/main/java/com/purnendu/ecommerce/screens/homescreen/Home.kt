@@ -1,4 +1,4 @@
-package com.purnendu.ecommerce.screens
+package com.purnendu.ecommerce.screens.homescreen
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -18,8 +18,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.purnendu.ecommerce.R
-import com.purnendu.ecommerce.components.Product
-import com.purnendu.ecommerce.components.SearchBar
+import com.purnendu.ecommerce.components.home.ProductsShowingPart
+import com.purnendu.ecommerce.components.home.SearchBar
 
 @Composable
 fun HomeScreen(navController: NavController) {
@@ -78,7 +78,7 @@ fun HomeScreen(navController: NavController) {
                     )
                     Column(modifier = Modifier.fillMaxWidth()) {
 
-                        Product(navController = navController)
+                        ProductsShowingPart(navController = navController)
 
                         Spacer(modifier = Modifier.height(10.dp))
 

@@ -1,4 +1,4 @@
-package com.purnendu.ecommerce.components
+package com.purnendu.ecommerce.components.home
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -15,10 +15,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.purnendu.ecommerce.dataclass.Product
+import com.purnendu.ecommerce.model.Product
 
 @Composable
-fun SingleProduct(modifier: Modifier=Modifier,product:Product) {
+fun SingleProductItem(modifier: Modifier=Modifier, product:Product) {
 
     Box(modifier = modifier .background(color = Color(229,229,229))) {
         Card(

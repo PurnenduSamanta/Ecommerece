@@ -14,10 +14,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.purnendu.ecommerce.R
-import com.purnendu.ecommerce.components.ColorChooserBox
+import com.purnendu.ecommerce.components.singleproduct.ColorChooserBox
 
 @Composable
-fun SingleProduct() {
+fun SingleProductScreen() {
 
     Column(
         modifier = Modifier

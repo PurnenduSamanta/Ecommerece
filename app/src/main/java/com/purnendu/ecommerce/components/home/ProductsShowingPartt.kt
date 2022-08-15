@@ -1,4 +1,4 @@
-package com.purnendu.ecommerce.components
+package com.purnendu.ecommerce.components.home
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
@@ -10,11 +10,12 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.google.accompanist.pager.*
+import com.purnendu.ecommerce.screens.homescreen.tabs.TabItems
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalPagerApi::class)
 @Composable
-fun Product(modifier: Modifier=Modifier,navController: NavController) {
+fun ProductsShowingPart(modifier: Modifier=Modifier, navController: NavController) {
 
     val tabs = listOf(
         TabItems.Electronics(navController),

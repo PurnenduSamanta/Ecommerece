@@ -1,4 +1,4 @@
-package com.purnendu.ecommerce.screens
+package com.purnendu.ecommerce.screens.homescreen.tabs
 
 
 import androidx.compose.foundation.background
@@ -12,8 +12,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.purnendu.ecommerce.R
-import com.purnendu.ecommerce.components.SingleProduct
-import com.purnendu.ecommerce.dataclass.Product
+import com.purnendu.ecommerce.components.home.SingleProductItem
+import com.purnendu.ecommerce.model.Product
 
 private val productsList = listOf(
     Product(R.drawable.watch1, "Apple Watch", "Series 6. Red", "18k"),
@@ -30,7 +30,7 @@ fun ElectronicsScreen(navController: NavController) {
     {
         items(productsList)
         { singleProduct ->
-            SingleProduct(modifier = Modifier
+            SingleProductItem(modifier = Modifier
                 .padding(end = 20.dp)
                 .clickable {
                     navController.navigate("product_screen")

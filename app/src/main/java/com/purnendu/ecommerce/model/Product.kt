@@ -1,4 +1,4 @@
-package com.purnendu.ecommerce.dataclass
+package com.purnendu.ecommerce.model
 
 import androidx.annotation.DrawableRes
 
