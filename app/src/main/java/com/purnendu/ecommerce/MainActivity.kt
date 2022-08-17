@@ -11,9 +11,10 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.purnendu.ecommerce.screens.LandingScreen
 import com.purnendu.ecommerce.screens.LoginScreen
 import com.purnendu.ecommerce.screens.SingleProductScreen
-import com.purnendu.ecommerce.screens.homescreen.HomeScreen
+import com.purnendu.ecommerce.screens.SplashScreen
 import com.purnendu.ecommerce.ui.theme.EcommerceTheme
 
 class MainActivity : ComponentActivity() {
@@ -39,16 +40,22 @@ class MainActivity : ComponentActivity() {
 fun Navigation() {
 
     val navController = rememberNavController()
-    NavHost(navController = navController, startDestination = "login_screen")
+    NavHost(navController = navController, startDestination = "splash_screen")
     {
+
+        composable(route = "splash_screen")
+        {
+           SplashScreen(navController)
+        }
+
         composable(route = "login_screen")
         {
             LoginScreen(navController)
         }
 
-        composable(route = "home_screen")
+        composable(route = "landing_screen")
         {
-            HomeScreen(navController = navController)
+            LandingScreen()
         }
         composable(route = "product_screen")
         {

@@ -14,7 +14,9 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import com.purnendu.ecommerce.LargeTextSize
 import com.purnendu.ecommerce.R
+import com.purnendu.ecommerce.ScreenPaddingValue
 import com.purnendu.ecommerce.components.login.InputTextField
 import com.purnendu.ecommerce.ui.theme.amazingBlue
 
@@ -32,7 +34,7 @@ fun LoginScreen(navController: NavController) {
             modifier = Modifier
                 .fillMaxHeight(0.4f)
                 .fillMaxWidth()
-                .padding(20.dp),
+                .padding(ScreenPaddingValue.dp),
             verticalArrangement = Arrangement.SpaceBetween
         ) {
 
@@ -48,7 +50,7 @@ fun LoginScreen(navController: NavController) {
 
             Text(
                 text = "Welcome\nback", maxLines = 2, textAlign = TextAlign.Start,
-                fontSize = 40.sp, fontWeight = FontWeight.Bold, color = Color.White,
+                fontSize = LargeTextSize.sp, fontWeight = FontWeight.Bold, color = Color.White,
                 letterSpacing = 2.sp
             )
 
@@ -79,7 +81,7 @@ fun LoginScreen(navController: NavController) {
             Column(
                 modifier = Modifier
                     .fillMaxSize()
-                    .padding(20.dp)
+                    .padding(ScreenPaddingValue.dp)
             ) {
 
                 Text(text = "Login", color = Color.Black)
@@ -117,7 +119,7 @@ fun LoginScreen(navController: NavController) {
                     ),
                     onClick = {
 
-                        navController.navigate("home_screen")
+                        navController.navigate("landing_screen")
 
                     }) {
 
