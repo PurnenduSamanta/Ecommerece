@@ -83,7 +83,9 @@ fun Navigation(navController: NavHostController,modifier: Modifier=Modifier) {
     {
         composable("home")
         {
-            HomeScreen(modifier=modifier,navController = navController)
+            HomeScreen(modifier=modifier,
+             //   navController = navController
+            )
         }
 
         composable("favourite")
@@ -102,6 +104,7 @@ fun Navigation(navController: NavHostController,modifier: Modifier=Modifier) {
         {
             CartScreen(modifier=modifier,navController = navController)
         }
+
     }
 
 }

@@ -16,11 +16,12 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.purnendu.ecommerce.model.Product
+import com.purnendu.ecommerce.ui.theme.backgroundColor
 
 @Composable
 fun SingleProductItem(modifier: Modifier=Modifier, product:Product) {
 
-    Box(modifier = modifier .background(color = Color(229,229,229))) {
+    Box(modifier = modifier .background(backgroundColor)) {
         Card(
             modifier = Modifier
                 .padding(top =50.dp)

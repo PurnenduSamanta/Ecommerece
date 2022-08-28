@@ -14,6 +14,7 @@ import androidx.navigation.NavController
 import com.purnendu.ecommerce.R
 import com.purnendu.ecommerce.components.home.SingleProductItem
 import com.purnendu.ecommerce.model.Product
+import com.purnendu.ecommerce.ui.theme.backgroundColor
 
 private val productsList = listOf(
     Product(R.drawable.watch1, "Apple Watch", "Series 6. Red", "18k"),
@@ -26,7 +27,7 @@ private val productsList = listOf(
 fun ElectronicsScreen(navController: NavController) {
 
     LazyRow(modifier = Modifier
-        .background(color = Color(229,229,229)))
+        .background(backgroundColor))
     {
         items(productsList)
         { singleProduct ->

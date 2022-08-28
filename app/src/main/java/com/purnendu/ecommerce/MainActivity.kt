@@ -13,7 +13,6 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.purnendu.ecommerce.screens.LandingScreen
 import com.purnendu.ecommerce.screens.LoginScreen
-import com.purnendu.ecommerce.screens.SingleProductScreen
 import com.purnendu.ecommerce.screens.SplashScreen
 import com.purnendu.ecommerce.ui.theme.EcommerceTheme
 
@@ -56,10 +55,6 @@ fun Navigation() {
         composable(route = "landing_screen")
         {
             LandingScreen()
-        }
-        composable(route = "product_screen")
-        {
-            SingleProductScreen()
         }
     }
 

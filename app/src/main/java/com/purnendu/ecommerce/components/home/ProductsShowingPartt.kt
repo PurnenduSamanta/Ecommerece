@@ -11,6 +11,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.google.accompanist.pager.*
 import com.purnendu.ecommerce.screens.homescreen.tabs.TabItems
+import com.purnendu.ecommerce.ui.theme.backgroundColor
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalPagerApi::class)
@@ -45,7 +46,7 @@ fun Tabs(tabs: List<TabItems>, pagerState: PagerState) {
     ScrollableTabRow(
         edgePadding=0.dp,
         selectedTabIndex = pagerState.currentPage,
-        backgroundColor = Color(229,229,229),
+        backgroundColor = backgroundColor,
         indicator = { tabPositions ->
             TabRowDefaults.Indicator(
                 Modifier.pagerTabIndicatorOffset(pagerState, tabPositions),

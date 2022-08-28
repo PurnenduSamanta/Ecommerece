@@ -13,14 +13,15 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 import com.purnendu.ecommerce.R
 import com.purnendu.ecommerce.components.singleproduct.ColorChooserBox
 
 @Composable
-fun SingleProductScreen() {
+fun SingleProductScreen(modifier: Modifier = Modifier, navController: NavController) {
 
     Column(
-        modifier = Modifier
+        modifier = modifier
             .fillMaxSize()
             .background(color = Color(229, 229, 229))
             .padding(top = 30.dp)
@@ -41,7 +42,7 @@ fun SingleProductScreen() {
             ) {
 
                 Icon(
-                    painter = painterResource(id = R.drawable.ic_arrow___left),
+                    painter = painterResource(id = R.drawable.ic_arrow_left),
                     contentDescription = "leftArrow"
                 )
 
